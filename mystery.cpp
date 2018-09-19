@@ -47,7 +47,7 @@ void mystery3(auto& D)
 
   for ( int i = 0 ; i < D.size( ) ; i++)
   {
-    for ( int j = 1 ; j < D.size() ; j++)
+    for ( int j = i ; j < D.size() ; j++)
 	if ( D[ j ] < D[ i ] )
 	    swap( D[ i ] , D[ j ] );
     print(D);
